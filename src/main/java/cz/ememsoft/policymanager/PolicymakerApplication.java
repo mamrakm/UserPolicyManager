@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class PolicymanagerApplication {
+public class PolicymakerApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(PolicymanagerApplication.class, args);
+        SpringApplication.run(PolicymakerApplication.class, args);
     }
 
 }

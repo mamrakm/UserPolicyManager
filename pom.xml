@@ -17,12 +17,12 @@
     <description>REST application for managing users and policies</description>
 
     <properties>
-        <java.version>21</java.version>
-        <maven.compiler.source>21</maven.compiler.source>
-        <maven.compiler.target>21</maven.compiler.target>
+        <java.version>24</java.version>
+        <maven.compiler.source>24</maven.compiler.source>
+        <maven.compiler.target>24</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <mapstruct.version>1.5.5.Final</mapstruct.version>
-        <org.postgresql.version>42.7.3</org.postgresql.version>
+        <mapstruct.version>1.6.3</mapstruct.version>
+        <org.postgresql.version>42.7.6</org.postgresql.version>
     </properties>
 
     <dependencies>
@@ -46,7 +46,7 @@
             <optional>true</optional>
         </dependency>
 
-        <!-- PostgreSQL -->
+        <!-- PostgresSQL -->
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
