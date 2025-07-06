@@ -29,12 +29,14 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 
+
 public class UserResponse {
 
     private String name;
     private String firstName;
     private String lastName;
     private String emailAddress;
+    @Builder.Default
     private List<String> organizationUnit = new ArrayList<>();
 
     @JsonFormat(pattern = "yyyy-MM-dd")
@@ -42,6 +44,6 @@ public class UserResponse {
 
     @JsonFormat(pattern = "yyyy-MM-dd")
     private LocalDate registeredOn;
-
+    @Builder.Default
     private List<String> policy = new ArrayList<>();
 }

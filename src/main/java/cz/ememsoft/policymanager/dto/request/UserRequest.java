@@ -45,6 +45,7 @@ public class UserRequest {
     @Email(message = "Valid email address is required")
     private String emailAddress;
 
+    @Builder.Default
     private List<String> organizationUnit = new ArrayList<>();
 
     @Past(message = "Birth date must be in the past")

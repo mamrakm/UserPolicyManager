@@ -36,8 +36,10 @@ public class UserDTO {
     private String firstName;
     private String lastName;
     private String emailAddress;
+    @Builder.Default
     private List<String> organizationUnit = new ArrayList<>();
     private LocalDate birthDate;
     private LocalDate registeredOn;
+    @Builder.Default
     private List<String> policy = new ArrayList<>();
 }

@@ -52,6 +52,7 @@ public class UserEntity {
     @ElementCollection
     @CollectionTable(name = "user_organization_units", joinColumns = @JoinColumn(name = "user_name"))
     @Column(name = "organization_unit")
+    @Builder.Default
     private List<String> organizationUnit = new ArrayList<>();
 
     @Column
@@ -62,6 +63,6 @@ public class UserEntity {
 
     @ElementCollection
     @CollectionTable(name = "user_policies", joinColumns = @JoinColumn(name = "user_name"))
-    @Column(name = "policy_id")
+    @Builder.Default
     private List<String> policy = new ArrayList<>();
 }
